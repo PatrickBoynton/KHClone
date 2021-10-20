@@ -1,0 +1,17 @@
+{
+  "name": "css-practice",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "live": "live-server",
+    "less": "lessc styles.less styles.css",
+    "start": "npm run live"
+  },
+  "author": "Patrick Boynton",
+  "license": "ISC",
+  "dependencies": {
+    "less": "^4.1.2",
+    "live-server": "^1.2.1"
+  }
+}

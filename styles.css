@@ -1,0 +1,13 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+ul {
+  display: flex;
+}
+span {
+  display: flex;
+}
+header {
+  display: flex;
+}
