@@ -4,9 +4,19 @@
 }
 ul {
   display: flex;
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  margin: 1rem;
+}
+.item {
+  flex-grow: 2;
+  text-align: center;
 }
 span {
   display: flex;
+  align-items: center;
 }
 header {
   display: flex;
