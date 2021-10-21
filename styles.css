@@ -2,22 +2,82 @@
   margin: 0;
   padding: 0;
 }
+html {
+  font-size: 10px;
+  box-sizing: border-box;
+}
+body {
+  font-size: 1.8 rem;
+  font-weight: bold;
+}
 ul {
   display: flex;
   list-style: none;
 }
+li {
+  align-self: center;
+  margin: 0 2rem;
+}
+nav {
+  font-weight: bold;
+  border-bottom: 2px solid #ccc;
+  margin-bottom: 1.5rem;
+  font-size: 1.8rem;
+}
 a {
+  color: #1865f2;
   text-decoration: none;
-  margin: 1rem;
+  word-wrap: none;
+  align-content: center;
+}
+a:focus,
+a:active {
+  border-bottom: 3px solid #1865f2;
 }
 .item {
   flex-grow: 2;
   text-align: center;
 }
+.hero-text {
+  font-size: 1.8rem;
+  width: 40rem;
+  padding: 3rem;
+}
 span {
   display: flex;
   align-items: center;
 }
+.btn {
+  margin: 5px;
+  background-color: #1865f2;
+  color: #fff;
+  padding: 10px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.button-group {
+  display: flex;
+  justify-content: center;
+  font-size: 1.8rem;
+  border: 2px solid green;
+}
 header {
   display: flex;
+  height: 100vh;
+  justify-content: space-around;
+}
+input {
+  font-size: 1.4rem;
+  padding: 1rem;
+  margin: 1rem;
+  border-radius: 4px;
+  border: none;
+  background-color: #e7e6e6;
+}
+input::placeholder {
+  color: #1865f2;
+}
+p {
+  line-height: 3rem;
+  margin-bottom: 2.5rem;
 }
