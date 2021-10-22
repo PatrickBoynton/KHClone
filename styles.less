@@ -2,9 +2,21 @@
 @secondaryColor: #fff;
 @background2: #f0f1f2;
 
+// All functions and other things not traditional CSS are just for my learning.
 @zeros: {
   margin: 0;
   padding: 0;
+};
+
+.color(@color: @primaryColor) {
+  color: @color;
+}
+
+@active-focus: {
+  &:focus,
+  &:active {
+    border-bottom: 3px solid @primaryColor;
+  }
 };
 
 @font-weight: {
@@ -29,11 +41,6 @@ html {
   font-family: "Lato";
 }
 
-body {
-  font-size: 1.8 rem;
-  font-weight: bold;
-}
-
 ul {
   @display-flex();
   list-style: none;
@@ -52,15 +59,13 @@ nav {
 }
 
 a {
-  color: @primaryColor;
+  .color(@primaryColor);
   text-decoration: none;
   word-wrap: none;
   align-content: center;
-}
+  font-weight: bold;
 
-a:focus,
-a:active {
-  border-bottom: 3px solid @primaryColor;
+  @active-focus();
 }
 
 .item {
@@ -82,7 +87,7 @@ span {
 .btn {
   margin: 5px;
   background-color: @primaryColor;
-  color: @secondaryColor;
+  .color(@secondaryColor);
   padding: 10px 10px;
   @border-radius();
   cursor: pointer;

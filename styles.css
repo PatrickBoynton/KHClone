@@ -7,10 +7,6 @@ html {
   box-sizing: border-box;
   font-family: "Lato";
 }
-body {
-  font-size: 1.8 rem;
-  font-weight: bold;
-}
 ul {
   display: flex;
   list-style: none;
@@ -30,6 +26,7 @@ a {
   text-decoration: none;
   word-wrap: none;
   align-content: center;
+  font-weight: bold;
 }
 a:focus,
 a:active {
